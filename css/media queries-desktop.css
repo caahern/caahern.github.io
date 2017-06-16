@@ -1,0 +1,81 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@media only screen and (min-device-width: 769px) {
+    /* Hides phone content */
+    div#mainphone {
+        display: none;
+    }
+    
+ 
+	header {
+		height: 250px;
+	}
+	
+	#contact {
+		padding-top: 0%;
+		padding-bottom: 100px;
+	}
+
+	#contact p {
+		font-size: 1.5em;
+	}
+
+	#contact h1 {
+		font-size: 1.4em;
+	}
+
+	#main {
+		padding-top:1%;
+	}
+
+
+	.sticky {
+		height: 5%;
+	}
+
+	header img {
+		max-width: 15%;
+	}
+
+
+	a {
+		font-size: 0.7em;
+	}
+
+	li {
+		font-size: 1em;
+		padding-top: 5px;
+	}
+
+
+	footer {
+		font-size: 0.9em;
+	}
+
+/*   Typography   */
+
+	h6 {
+		font-size: 0.7em;
+	}
+
+	h1 {
+		font-size:1em;
+	}
+
+	p {
+		font-size: 0.7em;
+	}
+	
+	#top {
+		width: 2%;
+		right: 5%;
+	}
+	
+	.hide {
+		padding-top: 0%;
+	}
+
+}
+
+

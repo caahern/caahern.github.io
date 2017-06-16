@@ -1,9 +1,15 @@
 // JavaScript Document
 
+// COLUMNS CHANGING DEPENDING ON WIDTH
+
+
+
 // HIDING AND SHOWING NAV PAGES
 
+
 $('.about').click(function() {
-	$('#main').hide(); // hide the home screen
+	$('#maindesktop').hide(); // hide the home screen
+	$('#mainphone').hide(); // hide the home screen
 	$('#contact').hide(); // hide the home screen
 	$('#cbrin').hide();
 	$('#redcorner').hide(); // hide the home screen
@@ -30,12 +36,14 @@ $('.about').click(function() {
 	$('#photog').hide();
 	$('#hendricks').hide();
 	$('#about').show(); // show the arc cinema page
+	$('footer').show();
 	
 });
 	
 	
-$('.contact').click(function() {
-	$('#main').hide(); // hide the home screen
+$('.contact').click(function() {// hide the home screen
+	$('#mainphone').hide();
+	$('#maindesktop').hide();// hide the home screen
 	$('#about').hide(); // hide the home screen
 	$('#cbrin').hide();
 	$('#redcorner').hide(); // hide the home screen
@@ -62,10 +70,12 @@ $('.contact').click(function() {
 	$('#photog').hide();
 	$('#hendricks').hide();
 	$('#contact').show(); // show the arc cinema page
+	$('footer').hide();
 
 });
+
 	
-$('.index').click(function() {
+$('.index').click(function() {	
 	$('#about').hide(); // hide the home screen
 	$('#contact').hide(); // hide the home screen
 	$('#cbrin').hide();
@@ -92,131 +102,162 @@ $('.index').click(function() {
 	$('#menu').hide();
 	$('#photog').hide();
 	$('#hendricks').hide();
-	$('#main').show(); // show the arc cinema page
-	
+	$('footer').show();
 });
+
+
+if ($(window).width() >= 768){  
+    $('.index').click(function() {
+		$('#mainphone').hide();
+		$('#maindesktop').show();
+  	});
+}
 
 
 // SHOWING PORTFOLIO PAGES
 
-$('#cbrinclick').click(function() {
-	$('#main').hide(); // hide the home screen
+$('.cbrinclick').click(function() {
+	$('#maindesktop').hide(); // hide the home screen
+	$('#mainphone').hide(); // hide the home screen
 	$('#cbrin').show(); // show the arc cinema page
 });
 
-$('#redcornerclick').click(function() {
-	$('#main').hide(); // hide the home screen
+$('.redcornerclick').click(function() {
+	$('#maindesktop').hide(); // hide the home screen
+	$('#mainphone').hide(); // hide the home screen
 	$('#redcorner').show(); // show the arc cinema page
 });
 
-$('#wayfindingclick').click(function() {
-	$('#main').hide(); // hide the home screen
+$('.wayfindingclick').click(function() {
+	$('#maindesktop').hide(); // hide the home screen
+	$('#mainphone').hide(); // hide the home screen
 	$('#wayfinding').show(); // show the arc cinema page
 });
 
-$('#dataclick').click(function() {
-	$('#main').hide(); // hide the home screen
+$('.dataclick').click(function() {
+	$('#maindesktop').hide(); // hide the home screen
+	$('#mainphone').hide(); // hide the home screen
 	$('#data').show(); // show the arc cinema page
 });
 
-$('#beautyclick').click(function() {
-	$('#main').hide(); // hide the home screen
+$('.beautyclick').click(function() {
+	$('#maindesktop').hide(); // hide the home screen
+	$('#mainphone').hide(); // hide the home screen
 	$('#beauty').show(); // show the arc cinema page
 });
 
-$('#teganclick').click(function() {
-	$('#main').hide(); // hide the home screen
+$('.teganclick').click(function() {
+	$('#maindesktop').hide(); // hide the home screen
+	$('#mainphone').hide(); // hide the home screen
 	$('#tegan').show(); // show the arc cinema page
 });
 
-$('#thcaclick').click(function() {
-	$('#main').hide(); // hide the home screen
+$('.thcaclick').click(function() {
+	$('#maindesktop').hide(); // hide the home screen
+	$('#mainphone').hide(); // hide the home screen
 	$('#thca').show(); // show the arc cinema page
 });
 
-$('#blmclick').click(function() {
-	$('#main').hide(); // hide the home screen
+$('.blmclick').click(function() {
+	$('#maindesktop').hide(); // hide the home screen
+	$('#mainphone').hide(); // hide the home screen
 	$('#blm').show(); // show the arc cinema page
 });
 
-$('#genyclick').click(function() {
-	$('#main').hide(); // hide the home screen
+$('.genyclick').click(function() {
+	$('#maindesktop').hide(); // hide the home screen
+	$('#mainphone').hide(); // hide the home screen
 	$('#geny').show(); // show the arc cinema page
 });
 
-$('#exchangeclick').click(function() {
-	$('#main').hide(); // hide the home screen
+$('.exchangeclick').click(function() {
+	$('#maindesktop').hide(); // hide the home screen
+	$('#mainphone').hide(); // hide the home screen
 	$('#exchange').show(); // show the arc cinema page
 });
 
-$('#posterclick').click(function() {
-	$('#main').hide(); // hide the home screen
+$('.posterclick').click(function() {
+	$('#maindesktop').hide(); // hide the home screen
+	$('#mainphone').hide(); // hide the home screen
 	$('#poster').show(); // show the arc cinema page
 });
 
-$('#buddyclick').click(function() {
-	$('#main').hide(); // hide the home screen
+$('.buddyclick').click(function() {
+	$('#maindesktop').hide(); // hide the home screen
+	$('#mainphone').hide(); // hide the home screen
 	$('#buddy').show(); // show the arc cinema page
 });
 	
 
-$('#typeclick').click(function() {
-	$('#main').hide(); // hide the home screen
+$('.typeclick').click(function() {
+	$('#maindesktop').hide(); // hide the home screen
+	$('#mainphone').hide(); // hide the home screen
 	$('#type').show(); // show the arc cinema page
 });
 
-$('#magtypeclick').click(function() {
-	$('#main').hide(); // hide the home screen
+$('.magtypeclick').click(function() {
+	$('#maindesktop').hide(); // hide the home screen
+	$('#mainphone').hide(); // hide the home screen
 	$('#magtype').show(); // show the arc cinema page
 });
 
-$('#rodclick').click(function() {
-	$('#main').hide(); // hide the home screen
+$('.rodclick').click(function() {
+	$('#maindesktop').hide(); // hide the home screen
+	$('#mainphone').hide(); // hide the home screen
 	$('#rod').show(); // show the arc cinema page
 });
 
-$('#kopiclick').click(function() {
-	$('#main').hide(); // hide the home screen
+$('.kopiclick').click(function() {
+	$('#maindesktop').hide(); // hide the home screen
+	$('#mainphone').hide(); // hide the home screen
 	$('#kopi').show(); // show the arc cinema page
 });
 
-$('#gtmclick').click(function() {
-	$('#main').hide(); // hide the home screen
+$('.gtmclick').click(function() {
+	$('#maindesktop').hide(); // hide the home screen
+	$('#mainphone').hide(); // hide the home screen
 	$('#gtm').show(); // show the arc cinema page
 });
 
-$('#tumblrclick').click(function() {
-	$('#main').hide(); // hide the home screen
+$('.tumblrclick').click(function() {
+	$('#maindesktop').hide(); // hide the home screen
+	$('#mainphone').hide(); // hide the home screen
 	$('#tumblr').show(); // show the arc cinema page
 });
 
-$('#logoclick').click(function() {
-	$('#main').hide(); // hide the home screen
+$('.logoclick').click(function() {
+	$('#maindesktop').hide(); // hide the home screen
+	$('#mainphone').hide(); // hide the home screen
 	$('#plogo').show(); // show the arc cinema page
 });
 
-$('#gritclick').click(function() {
-	$('#main').hide(); // hide the home screen
+$('.gritclick').click(function() {
+	$('#maindesktop').hide(); // hide the home screen
+	$('#mainphone').hide(); // hide the home screen
 	$('#grit').show(); // show the arc cinema page
 });
 
-$('#carsonclick').click(function() {
-	$('#main').hide(); // hide the home screen
+$('.carsonclick').click(function() {
+	$('#maindesktop').hide(); // hide the home screen
+	$('#mainphone').hide(); // hide the home screen
 	$('#carson').show(); // show the arc cinema page
 });
 
-$('#menuclick').click(function() {
-	$('#main').hide(); // hide the home screen
+$('.menuclick').click(function() {
+	$('#maindesktop').hide(); // hide the home screen
+	$('#mainphone').hide(); // hide the home screen
 	$('#menu').show(); // show the arc cinema page
 });
 
-$('#photogclick').click(function() {
-	$('#main').hide(); // hide the home screen
+$('.photogclick').click(function() {
+	$('#maindesktop').hide(); // hide the home screen
+	$('#mainphone').hide(); // hide the home screen
 	$('#photog').show(); // show the arc cinema page
 });
 
-$('#hendricksclick').click(function() {
-	$('#main').hide(); // hide the home screen
+$('.hendricksclick').click(function() {
+	$('#maindesktop').hide(); // hide the home screen
+	$('#mainphone').hide(); // hide the home screen
 	$('#hendricks').show(); // show the arc cinema page
 });
 
@@ -231,12 +272,7 @@ $('#nav > ul > li').click(function() {
 
 
 // MAKING HEADER STICKY 
-
-
-
-
-
-if ($(window).width() > 769) {
+if ($(window).width() > 769) {					  
    	$(window).scroll(function() {
 	   if ($(this).scrollTop() > 120){  
     $('header').addClass("sticky");
@@ -256,6 +292,7 @@ else  if ($(window).width() < 768) {
   	}
    });	 
 }
+					  
 // SCROLL TOP BUTTON
 
 $(document).ready(function() {
