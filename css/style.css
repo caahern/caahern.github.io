@@ -2,63 +2,16 @@
 /* CSS Document */
 
 
-
-
-
-/*   General Content   */
-
-
-
-/*   MEDIA QUERIES   */
-/*   Tegan Page   */
-#tegan {
-	padding-bottom:250px;
-}
-
-/*   Wayfinding Page   */
-
-#wayfinding {
-	padding-bottom:70px;
-}
-
 /*   Data Visualisation Page   */
 #data img {
 	border: solid 0.3px #E5E5E5;
 	padding: 20px;
 }
 
-/*   Beauty Page   */
-#beauty {
-	padding-bottom: 580px; 
-}
-
 /*   BLM Page   */
 #blm {
-	padding-bottom: 300px;
-}
-
-/*   Poster Page   */
-
-#poster {
-	padding-bottom: 350px;
-}
-
-/*   Mag Type Page   */
-
-#magtype {
 	padding-bottom: 100px;
 }
-
-/*   Hot Rod Page   */
-#rod {
-	padding-bottom: 850px;
-}
-
-/*   Kopi   */
-#kopi {
-	padding-bottom: 100px;
-}
-
 
 #mainphone {
 	padding-top: 8%;
@@ -84,6 +37,26 @@
 
 
 /*   General */
+
+html {
+	height: 100%;
+	box-sizing: border-box;
+}
+
+body {
+	padding-bottom: 10%;
+}
+
+footer {
+	position: absolute;
+  	right: 0;
+  	bottom: 0;
+  	left: 0;
+
+
+}
+
+
 .border {
 	border: solid 0.3px #E5E5E5;
 }
@@ -95,9 +68,11 @@
 
 .row{padding: 2% 0;}
 
-#body {
+body {
 	margin-top: 300px;
+	position: relative;
 }
+
 
 
 
@@ -109,6 +84,7 @@ header {
 	z-index: 1;
 	background-color: white;
 	border-bottom: solid 0.1px #E9E9E9;
+	margin-bottom: auto;
 }
 
 .sticky {
@@ -137,7 +113,27 @@ nav {
 	margin-top: 15px;
 }
 
+#nav ul {
+	list-style-type: none;
+	text-align: center;
+}
+
+#nav li {
+	display: inline-block;
+}
+
+#nav li a{
+	font-size: 1em;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 100;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	padding: 20px ; 
+	margin: 0px 40px;
+}
+
 a {
+	list-style-type: none;
 	text-decoration: none;
 	color: #363636;
 	text-transform: uppercase;
@@ -149,27 +145,7 @@ a {
 
 a:hover {
 	color:#f89f4f;
-	font-weight: bold;
-}
-
-nav li:hover {
-	color: #f89f4f;
-}
-
-ul {
-	text-align: center;
-}
-
-li {
-	font-size: 1.5em;
-	font-family: 'Montserrat', sans-serif;
-	font-weight: 100;
-	text-transform: uppercase;
-	letter-spacing: 3px;
-	list-style-type: none;
-	display: inline-block;
-	padding: 20px ; 
-	margin: 0px 40px;
+	font-weight: 200;
 }
 
 #contactfooter {
@@ -263,12 +239,8 @@ i {
     font-weight: 200;
 }
 
-.work img {
-	max-width: 100%;
-}
-
-#body img {
-	max-width: 100%;
+img {
+	width: 100%;
 }
 
 
@@ -287,27 +259,30 @@ i {
         display: none;
     }
 	
+	#cbrin, #redcorner, #wayfinding, #data, #thca, #blm, #geny, #exchange, #buddy, #type, #magtype, #rod, #kopi, #plogo, #carson, #bridge, #photog, #hendricks, #tumblr, #about, #contact {
+		padding-top: 8%;
+	}
+	
+	h1 {
+	 font-size: 2em;
+	}
+	
+	h6 {
+		font-size: 1.5em;
+	}
+	
+	p {
+		font-size: 1.5em;
+	}
+	
+	#nav li {
+		font-size: 1.8em;
+	}
+	
+	#contact, #rod {
+		padding-bottom: 1000px;
+	}
+	
+}
+	
     
-    /* Shows desktop home */
-    
-	
-
-/*   Images  */
-/*   TABLET   */
-
-/*@media only screen and (min-width: 481px) and (max-width:549px) {
-	header img {
-		max-width: 28%;
-	}
-	
-	nav li {
-		padding: 0px;
-		margin: 0px 25px;
-	}
-	
-	#top {
-		width: 5%;
-		right: 50%;
-	}
-
-}*/
