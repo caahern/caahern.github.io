@@ -34,16 +34,16 @@
 	color: #f89f4f;
 }
 
+#contact img {
+	width: 10%;
+}
+
 
 /*   General */
 
 html {
 	height: 100%;
 	box-sizing: border-box;
-}
-
-body {
-	padding-bottom: 10%;
 }
 
 footer {
@@ -70,9 +70,8 @@ footer {
 body {
 	margin-top: 300px;
 	position: relative;
+	padding-bottom: 10%;
 }
-
-
 
 
 header {
@@ -252,9 +251,6 @@ img {
 	opacity: 0.8;
 }
 
-#contact img {
-	width: 10%;
-}
 
 @media only screen and (max-device-width: 440px) {
     /* Hides phone content */
