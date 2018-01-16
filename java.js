@@ -282,7 +282,7 @@ if ($(window).width() > 769) {
   	}
    });
 }
-else  if ($(window).width() < 768) {
+else  if ($(window).width() < 1024) {
    $(window).scroll(function() {
 	   if ($(this).scrollTop() > 80){  
     $('header').addClass("sticky");
